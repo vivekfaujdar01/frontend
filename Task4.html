@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'item1 item2 item2 item3'
+                                 'item1 item4 item5 item5'
+                                 'item6 item7 item7 item10 '
+                                 'item8 item8 item9 item10'
+                                 'item11 item12 item12 item13'
+                                 'item11 item14 item15 item15'
+                                 'item16 item17 item17 item18'
+                                 ;
+            gap: 5px;
+            padding: 10px;
+            height: 500px;
+
+        }
+        .grid-item {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            justify-content: center;
+            align-content: center;
+            font-size: larger;
+        }
+        .grid-item:nth-child(1) {
+            grid-area: item1;
+        
+        }
+        .grid-item:nth-child(2) {
+            grid-area: item2;
+            
+        }
+        .grid-item:nth-child(3) {
+            grid-area: item3;
+            
+        }
+        .grid-item:nth-child(4) {
+            grid-area: item4;
+            
+        }
+       .grid-item:nth-child(5) {
+            grid-area: item5;
+            
+        }
+        .grid-item:nth-child(6) {
+            grid-area: item6;
+            
+        }
+        .grid-item:nth-child(7) {
+            grid-area: item7;
+            
+        }
+        .grid-item:nth-child(8) {
+            grid-area: item8;
+            
+        }
+        .grid-item:nth-child(9) {
+            grid-area: item9;
+            
+        }
+        .grid-item:nth-child(9) {
+            grid-area: item9;
+            
+        }
+        .grid-item:nth-child(10) {
+            grid-area: item10;
+            
+        }
+        .grid-item:nth-child(11) {
+            grid-area: item11;
+            
+        }
+        .grid-item:nth-child(12) {
+            grid-area: item12;
+            
+        }
+        .grid-item:nth-child(13) {
+            grid-area: item13;
+           
+        }
+        .grid-item:nth-child(14) {
+            grid-area: item14;
+            
+        }
+        .grid-item:nth-child(15) {
+            grid-area: item15;
+            
+        }
+        .grid-item:nth-child(16) {
+            grid-area: item16;
+            
+        }
+        .grid-item:nth-child(17) {
+            grid-area: item17;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+        <div class="grid-item">13</div>
+        <div class="grid-item">14</div>
+        <div class="grid-item">15</div>
+        <div class="grid-item">16</div>
+        <div class="grid-item">17</div>
+        <div class="grid-item">18</div>
+    </div>
+</body>
+</html>

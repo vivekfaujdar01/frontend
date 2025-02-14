@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            display: flex ;
+            height: 70px;
+        }
+        .logo{
+            width: 40%;
+            display: grid;
+            place-items: center;
+            font-size:40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .navbar{
+            display: flex ;
+            justify-content: space-around;
+            align-items: center ;
+            font-size: 20px;
+            width: 60%;
+        }
+        form{
+            display: flex;
+            width: 40%;
+            margin: 0 auto;
+            padding: 40px;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            border-radius: 20px;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .tag{
+            display: flex;
+            gap: 100px;
+            
+        }
+        label{
+            width: 200px;
+            font-size: 30px;
+        }
+        .tag input{
+            height: 60px;
+            border-radius: 20px;
+        }
+        span select{
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><h1>LOGO</h1></div>
+        <div class="navbar">
+            <h3>Home</h3>
+            <h3>About US</h3>
+            <h3>Contact Us</h3>
+            <h3>Services</h3>
+        </div>
+    </nav>
+    <hr>
+    <h1 style="text-align: center; margin-top: 20px;">APPLICATION FORM</h1><br><br>
+    <form>
+        <fieldset>
+            <!-- <legend style="align-items: center;">FORM</legend> -->
+            <div class="tag"><label for="fname">NAME: </label><input type="text" ><br><br></div>
+            <div class="tag"><label for="email">Email: </label><input type="email"><br><br></div>
+            <div class="tag"><label for="number">Phone Number: </label><input type="number"><br><br></div>
+            <div class="tag">
+                <label for="gender">Gender: </label>
+                <span>
+                    <select id="gender" name="gender">
+                        <option></option>
+                        <option value="MALE">MALE</option>
+                        <option value="FEMALE">FEMALE</option>
+                        <option value="OTHER">OTHER</option>
+                    </select>
+                </span>
+                
+            </div>
+            
+            <div class="tag" ><label >DOB</label><input type="date"></div>
+           
+            
+            
+        </fieldset>
+    </form>
+</body>
+</html>
