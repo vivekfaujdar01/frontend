@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        /* Custom styles for a more Google-like feel */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-blue-600 text-3xl font-bold">Library</h1>
+            <div>
+                <a href="#" class="text-gray-700 px-4 hover:text-blue-600 transition">Home</a>
+                <a href="#" class="text-gray-700 px-4 hover:text-blue-600 transition">Books</a>
+                <a href="#" class="text-gray-700 px-4 hover:text-blue-600 transition">About</a>
+                <a href="#" class="text-gray-700 px-4 hover:text-blue-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="container mx-auto mt-12 flex justify-center">
+        <input type="text" placeholder="Search for books..." class="border border-gray-300 rounded-full p-4 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md">
+        <button class="bg-blue-600 text-white rounded-full p-4 ml-2 hover:bg-blue-500 transition">Search</button>
+    </div>
+
+    <!-- Book Listing -->
+    <div class="container mx-auto mt-24">
+        <h2 class="text-3xl font-bold mb-6 text-center">Available Books</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Book Card -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold">Book Title 1</h3>
+                <p class="text-gray-600">Author: Author Name</p>
+                <p class="text-gray-600">Genre: Fiction</p>
+                <button class="bg-blue-600 text-white rounded-full p-2 mt-4 hover:bg-blue-500 transition">Borrow</button>
+            </div>
+            <!-- Book Card -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold">Book Title 2</h3>
+                <p class="text-gray-600">Author: Author Name</p>
+                <p class="text-gray-600">Genre: Non-Fiction</p>
+                <button class="bg-blue-600 text-white rounded-full p-2 mt-4 hover:bg-blue-500 transition">Borrow</button>
+            </div>
+            <!-- Book Card -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold">Book Title 3</h3>
+                <p class="text-gray-600">Author: Author Name</p>
+                <p class="text-gray-600">Genre: Mystery</p>
+                <button class="bg-blue-600 text-white rounded-full p-2 mt-4 hover:bg-blue-500 transition">Borrow</button>
+            </div>
+            <!-- Add more book cards as needed -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold">Book Title 3</h3>
+                <p class="text-gray-600">Author: Author Name</p>
+                <p class="text-gray-600">Genre: Mystery</p>
+                <button class="bg-blue-600 text-white rounded-full p-2 mt-4 hover:bg-blue-500 transition">Borrow</button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold">Book Title 3</h3>
+                <p class="text-gray-600">Author: Author Name</p>
+                <p class="text-gray-600">Genre: Mystery</p>
+                <button class="bg-blue-600 text-white rounded-full p-2 mt-4 hover:bg-blue-500 transition">Borrow</button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold">Book Title 3</h3>
+                <p class="text-gray-600">Author: Author Name</p>
+                <p class="text-gray-600">Genre: Mystery</p>
+                <button class="bg-blue-600 text-white rounded-full p-2 mt-4 hover:bg-blue-500 transition">Borrow</button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold">Book Title 3</h3>
+                <p class="text-gray-600">Author: Author Name</p>
+                <p class="text-gray-600">Genre: Mystery</p>
+                <button class="bg-blue-600 text-white rounded-full p-2 mt-4 hover:bg-blue-500 transition">Borrow</button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold">Book Title 3</h3>
+                <p class="text-gray-600">Author: Author Name</p>
+                <p class="text-gray-600">Genre: Mystery</p>
+                <button class="bg-blue-600 text-white rounded-full p-2 mt-4 hover:bg-blue-500 transition">Borrow</button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold">Book Title 3</h3>
+                <p class="text-gray-600">Author: Author Name</p>
+                <p class="text-gray-600">Genre: Mystery</p>
+                <button class="bg-blue-600 text-white rounded-full p-2 mt-4 hover:bg-blue-500 transition">Borrow</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white p-4 mt-12 shadow-md">
+        <div class="container mx-auto text-center text-gray-600">
+            <p>&copy;  Library Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
